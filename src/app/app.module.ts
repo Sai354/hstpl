@@ -35,6 +35,7 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
 import { StepComponent } from './step/step.component';
 import { StepsModule } from 'primeng/steps';
 import { ToastModule } from 'primeng/toast';
+import { ForgetComponent } from './forget/forget.component';
 
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
@@ -53,6 +54,7 @@ FullCalendarModule.registerPlugins([
     SignupComponent,
     FormComponent,
     StepComponent,
+    ForgetComponent,
  
   ],
   imports: [

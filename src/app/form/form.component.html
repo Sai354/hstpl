@@ -1,0 +1,322 @@
+<!-- <p>form works!</p> -->
+<div class=" h-screen">
+    <form class="card" [formGroup]="registerForm">
+        <p-card>
+            <div style="text-align: center;">
+                <img  style="width: 50px;height: 50px;" src="./../../../assets/logo.png" >
+            </div>
+            
+            <h3 style="margin-left: 100px;">Create New Account</h3>
+            <!-- <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <input type="text" pInputText placeholder="First Name" formControlName="FirstName">
+            </div>
+            <div style="color: red;" *ngIf="this.registerForm.get('FirstName').touched && this.registerForm.get('FirstName').errors?.required">First Name is required</div>
+            <div style="color: red;" *ngIf="this.registerForm.controls.FirstName.touched && this.registerForm.controls.FirstName.errors?.minlength">Minimum 3 charaters  is required</div>
+         
+
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <input type="text"   pInputText placeholder="LastName" formControlName="LastName">
+            </div>
+            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>
+
+            
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+                <input type="email"  pInputText placeholder="Email" formControlName="email"> 
+            </div>
+            <span style="color: red;"
+            *ngIf="this.registerForm.get('email').errors?.required && this.registerForm.get('email').touched">Email Id Is Required</span>
+
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i><img style="width: 22px;height: 22px;" src="../../../assets/gender.png"></i></span>
+              
+                <p-dropdown [options]="cities" [style]="{'width':'100%','height':'100%'}" optionLabel="name"  placeholder="Gender"></p-dropdown><br>
+            </div>
+
+           
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i><img style="width: 21px;height: 21px;" src="../../../assets/age.png"></i></span>
+                <input type="number"  pInputText placeholder="Age" formControlName="Age">
+            </div>
+
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <input type="text"  pInputText placeholder="User Name" formControlName="UserName">
+            </div>
+            <div style="color: red;" *ngIf="this.registerForm.get('UserName').touched && this.registerForm.get('UserName').errors?.required">User Name is required</div>
+            <div style="color: red;" *ngIf="this.registerForm.controls.UserName.touched && this.registerForm.controls.UserName.errors?.minlength">Minimum 3 charaters  is required</div>
+            <div style="color: red;" *ngIf="this.registerForm.controls.UserName.touched && this.registerForm.controls.UserName.errors?.maxlength">Maximum 10 charaters  is required</div>
+
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                <input type="password"  pInputText placeholder="Password" formControlName="Password">
+            </div>
+            <div style="color: red;" *ngIf="this.registerForm.get('Password').touched && this.registerForm.get('Password').errors?.required">Password is required</div>
+            <div style="color: red;" *ngIf="this.registerForm.controls.Password.touched && this.registerForm.controls.Password.errors?.minlength">Minimum 8 charaters  is required</div>
+            <div style="color: red;" *ngIf="this.registerForm.controls.Password.touched && this.registerForm.controls.Password.errors?.maxlength">Maximum 15 charaters  is required</div>
+
+            <div class="p-inputgroup mt-4">
+                <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                <input type="password"  pInputText placeholder="Confirm Password" formControlName="ConfirmPassword">
+            </div>
+            <div style="color: red;" *ngIf = "this.registerForm.get('Password').touched && this.registerForm.get('Password').errors?.required">Confirm Password is required</div>
+            <div style="color: red;" *ngIf = "this.registerForm.controls.ConfirmPassword.touched && this.registerForm.controls.Password.value != this.registerForm.controls.ConfirmPassword.value"> Password didn't matched</div> -->
+
+
+
+            <div class="grid p-fluid">
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                    
+                            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <input type="text" pInputText placeholder="First Name" formControlName="FirstName">
+                        
+                        <div style="color: red;" *ngIf="this.registerForm.get('FirstName').touched && this.registerForm.get('FirstName').errors?.required">First Name is required</div>
+                        <div style="color: red;" *ngIf="this.registerForm.controls.FirstName.touched && this.registerForm.controls.FirstName.errors?.minlength">Minimum 3 charaters  is required</div>
+                    </div>
+                </div>
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <input type="text"   pInputText placeholder="Middle Name" formControlName="middleName"> 
+                    </div>
+                </div>
+                        
+
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <input type="text"   pInputText placeholder="Last Name" formControlName="LastName"> 
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+
+             
+            </div>
+
+
+
+
+            <div class="grid p-fluid">
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+                            <input type="email"  pInputText placeholder="Email" formControlName="email">
+                            <span style="color: red;"
+                            *ngIf="this.registerForm.get('email').errors?.required && this.registerForm.get('email').touched">Email Id Is Required</span> 
+                    </div>
+                </div>
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <input type="text"   pInputText placeholder="MObile Number" formControlName="mobileNumber"> 
+                    </div>
+                </div>
+                        
+
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <input type="text"   pInputText placeholder="Alternative Number" formControlName="alternativeNumber"> 
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+
+             
+            </div>
+
+        
+
+            <div class="grid p-fluid">
+
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                    
+                        <span class="p-inputgroup-addon"><i><img style="width: 22px;height: 22px;" src="../../../assets/gender.png"></i></span>
+              
+                        <p-dropdown [options]="cities" [style]="{'width':'100%','height':'100%'}" optionLabel="name"  placeholder="Gender"></p-dropdown><br>
+                        
+                        <div style="color: red;" *ngIf="this.registerForm.get('FirstName').touched && this.registerForm.get('FirstName').errors?.required">First Name is required</div>
+                        <div style="color: red;" *ngIf="this.registerForm.controls.FirstName.touched && this.registerForm.controls.FirstName.errors?.minlength">Minimum 3 charaters  is required</div>
+                    </div>
+                </div>
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i><img style="width: 21px;height: 21px;" src="../../../assets/age.png"></i></span>
+                        <input type="number"  pInputText placeholder="Age" formControlName="Age">
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+                        
+
+      
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i><img style="width: 21px;height: 21px;" src="../../../assets/age.png"></i></span>
+                        <input type="number"  pInputText placeholder="D O B" formControlName="dob">
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+
+            
+            </div>
+
+
+            <!-- <div class="grid p-fluid">
+
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                    
+                        <span class="p-inputgroup-addon"><i><img style="width: 22px;height: 22px;" src="../../../assets/gender.png"></i></span>
+              
+                        <p-dropdown [options]="cities" [style]="{'width':'100%','height':'100%'}" optionLabel="name"  placeholder="Blood group"></p-dropdown><br>
+                        
+                        <div style="color: red;" *ngIf="this.registerForm.get('FirstName').touched && this.registerForm.get('FirstName').errors?.required">First Name is required</div>
+                        <div style="color: red;" *ngIf="this.registerForm.controls.FirstName.touched && this.registerForm.controls.FirstName.errors?.minlength">Minimum 3 charaters  is required</div>
+                    </div>
+                </div>
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i><img style="width: 21px;height: 21px;" src="../../../assets/age.png"></i></span>
+                        <input type="number"  pInputText placeholder="Country" formControlName=" country">
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+                        
+
+      
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i><img style="width: 21px;height: 21px;" src="../../../assets/age.png"></i></span>
+                        <input type="number"  pInputText placeholder="State" formControlName="state">
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+
+            
+            </div> -->
+
+
+
+
+
+            <div class="grid p-fluid">
+
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                        <input type="text"  pInputText placeholder="User Name" formControlName="UserName">
+                            <span style="color: red;"
+                            *ngIf="this.registerForm.get('email').errors?.required && this.registerForm.get('email').touched">Email Id Is Required</span> 
+                    </div>
+                </div>
+
+
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                    
+                        <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                <input type="password"  pInputText placeholder="Password" formControlName="Password">
+                        
+                        <div style="color: red;" *ngIf="this.registerForm.get('FirstName').touched && this.registerForm.get('FirstName').errors?.required">First Name is required</div>
+                        <div style="color: red;" *ngIf="this.registerForm.controls.FirstName.touched && this.registerForm.controls.FirstName.errors?.minlength">Minimum 3 charaters  is required</div>
+                    </div>
+                </div>
+                
+                <div class="col-12 md:col-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+                        <input type="password"  pInputText placeholder="Confirm Password" formControlName="ConfirmPassword">
+                            <div style="color: red;" *ngIf="this.registerForm.get('LastName').touched && this.registerForm.get('LastName').errors?.required">First Name is required</div>
+                            <div style="color: red;" *ngIf="this.registerForm.controls.LastName.touched && this.registerForm.controls.LastName.errors?.minlength">Minimum 4 charaters  is required</div>    
+                    </div>
+                </div>
+                        
+              
+            </div>
+
+
+
+
+            
+
+            <div class="grid p-fluid">
+                <div class="col-12 md:col-3">
+                    <div class="p-inputgroup">
+                       <textarea [rows]="5" [cols]="30" pInputTextarea   placeholder="Current Address" ></textarea>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <div class="p-inputgroup">
+                <textarea [rows]="5" [cols]="30" pInputTextarea   placeholder="Permenant Address" ></textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+     
+
+
+
+
+            <div class="grid p-fluid">
+
+                <div class="col-12 md:col-2">
+                    <div class="p-inputgroup">
+                                 
+            <span class="flex justify-content-center align-content-center mt-4 ">
+                <button pButton class=" w-full text-white p-button-text  surface-900" label="Submit" (click)="onClick()"></button>
+           
+            </span>
+                    </div>
+                </div>
+
+
+                <div class="col-12 md:col-2">
+                    <div class="p-inputgroup">
+                    
+                                 
+            <span class="flex justify-content-center align-content-center mt-4 ">
+                <button pButton class=" w-full text-white p-button-text  surface-900" label="Cancel" (click)="onClick()"></button>
+           
+            </span>
+                    </div>
+                </div>      
+              
+            </div>
+
+
+
+          
+            <!-- <span class="flex justify-content-center align-content-center mt-4 ">
+                <button pButton class=" w-full text-white p-button-text  surface-900" label="Submit" (click)="onClick()"></button>
+           
+            </span> -->
+
+
+
+        </p-card>
+    </form>
+</div>
+
+
+
+
+
+

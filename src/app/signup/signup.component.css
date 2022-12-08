@@ -1,0 +1,27 @@
+.card {
+    align-items: center;
+    width: 30%;
+}
+
+.h-screen {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('\Angular\table\src\assets\logo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.logo {
+    align-items: center;
+}
+
+.loginBtn .p-button {
+    width: 100%;
+    background-color: rgba(31, 30, 30, 0.898);
+    color: #fff;
+}
